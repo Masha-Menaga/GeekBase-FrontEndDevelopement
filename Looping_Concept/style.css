@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {
+  text-align: center;
+  margin: 10px auto;
+}
+h2 {
+  text-align: center;
+  text-decoration: underline;
+}
+table {
+  border: 2px dotted coral;
+  border-radius: 10px;
+  box-shadow: 4px 4px;
+  margin: 10px auto;
+}
+thead {
+  color: dodgerblue;
+}
+thead th {
+  border-bottom: 2px solid crimson;
+
+  border-right: 2px solid crimson;
+  padding: 10px;
+}
+tbody td {
+  font-family: monospace;
+  border-right: 2px solid crimson;
+  padding: 10px;
+  line-height: 25px;
+}
+tbody span {
+  margin-left: 30px;
+}
