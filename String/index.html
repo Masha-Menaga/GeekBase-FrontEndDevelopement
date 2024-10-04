@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Strings</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <h1>Strings In Java Script</h1>
+    <p>Strings are <span>IMMUTABLE</span> One.</p>
+    <p>IMMUTABLE is nothing but, Not able to change.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Method</th>
+          <th>Syntax</th>
+          <th>Example</th>
+          <th>Explaination</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">
+            CharAt - Find the <b>Charater</b> in the given String with index
+          </td>
+          <td>charAt(index Value)</td>
+          <td>console.log(Name.charAt(4));</td>
+          <td rowspan="2">
+            <p>at() is the Newset version of charAt()</p>
+            <p>
+              In at() We can also use <b>Negative value</b>. It consider the
+              value from <b>last to First</b>
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>at(index value)</td>
+          <td>console.log(Name.at(-4));</td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            SubString - The String Taken From the Previous String.<br />(Eg. in
+            Masha &RightArrow; sha)
+          </td>
+          <td>substring(StratIndex,EndIndex)</td>
+          <td>console.log(Name.substring(2,5));</td>
+          <td rowspan="2">
+            <p>slice() is the Newest Version of substring.</p>
+            <p>
+              Also slice can accept the <b>Negative Value</b>, same like
+              <b>at()</b>.
+            </p>
+            <p>
+              EndIndex always take it as <b>(EndIndex -1)</b>.<br />(Eg. If We
+              Give 4, it Consider 4 - 1 => 3)
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>slice(StartIndex,EndIndex)</td>
+          <td>console.log(Name.slice(-2));</td>
+        </tr>
+        <tr>
+          <td>UpperCase - The String Change to UpperCase</td>
+          <td>toUpperCase()</td>
+          <td>console.log(Name.toUpperCase());</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>LowerCase - The String Change to LowerCase</td>
+          <td>toLowerCase()</td>
+          <td>console.log(Name.toLowerCase());</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td rowspan="2">Concadinate - Concadinating more than one String</td>
+          <td>String1 + String2</td>
+          <td>console.log("String1" + "String2");</td>
+          <td rowspan="2">
+            concat() is the Newest Version of adding the String
+          </td>
+        </tr>
+        <tr>
+          <td>concat("String1","String2")</td>
+          <td>console.log(Name.concat("String2"));</td>
+        </tr>
+        <tr>
+          <td>Trim - Remove Un-Wanted Space</td>
+          <td>trim()</td>
+          <td>console.log(Name.trim());</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Replace - Replace the Single Charcter</td>
+          <td>replace("ExistingCharacter","ReplacingCharacter")</td>
+          <td>newstr=Name.replace("e","E");</td>
+          <td>
+            <p>String functions is case Sensitive</p>
+            <p>It Things "e" & "E" is a different one</p>
+            <p>
+              Replace only one Character.<br />(Eg. Sweet &rightarrow; SwEet)
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            ReplaceAll - Replace all the Character in the String (e &rightarrow;
+            E)
+          </td>
+          <td>replaceAll("ExistingCharacter","ReplacingCharacter")</td>
+          <td>newstr=Name.replaceAll("e","E");</td>
+          <td>(Eg. Sweet &rightarrow; SwEEt)</td>
+        </tr>
+        <tr>
+          <td>
+            Split - Split the Sentence to Words (helps of space, hypen, commas )
+          </td>
+          <td>split("-")</td>
+          <td>let arr=greet.split("-");</td>
+          <td>
+            (Eg. <i>greet="Good-Evening-Friends"</i><br />
+            (3) ['Good', 'Evening', 'Friends'])
+          </td>
+        </tr>
+        <tr>
+          <td>IndexOf - Find the Index Helps with Charcter</td>
+          <td>indexOf(e)</td>
+          <td>console.log(greet.indexof("e"));</td>
+          <td>It Shows the index of the first letter e in the given String</td>
+        </tr>
+        <tr>
+          <td>LastIndexOf - Find the Last Index Helps with Charcter</td>
+          <td>lastIndexOf(e)</td>
+          <td>console.log(greet.lastIndexof("e"));</td>
+          <td>
+            It Shows the index of the last letter e in the given String. it
+            checks <b>Last to First</b> Order
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Includes - It Checks the word or Character is Include in the given
+            String
+          </td>
+          <td>includes("String")</td>
+          <td>console.log(greet.inclues("evening"));</td>
+          <td>Includes only return Boolean Value (True/False)</td>
+        </tr>
+        <tr>
+          <td>StartsWith - Check The Starting Word in the Given String</td>
+          <td>stratsWith("CheckString")</td>
+          <td>console.log(greet.startsWith("Go"));</td>
+          <td>It also return a Boolean Value</td>
+        </tr>
+        <tr>
+          <td>EndsWith - Check the String Ending Word</td>
+          <td>endWith("CheckString")</td>
+          <td>console.log(greet.endsWith("Friends"));</td>
+          <td>Return a Boolean Value</td>
+        </tr>
+        <tr>
+          <td>Repeat - It repeats many time</td>
+          <td>repeat()</td>
+          <td>console.log("*".repeat(10));</td>
+          <td>It Prints the * 10 times</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script src="script.js" />
+  </body>
+</html>
